@@ -19,3 +19,6 @@ kubectl get svc -n prometheus
 kubectl edit svc stable-kube-prometheus-sta-prometheus -n prometheus
 
 kubectl edit svc stable-grafana -n prometheus
+
+//get password
+kubectl get secret stable-grafana -n prometheus -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
