@@ -6,7 +6,7 @@ metadata:
     app: webapp
     version: blue
 spec:
-  replicas: 3   # 75% of traffic
+  replicas: 2   # 75% of traffic
   selector:
     matchLabels:
       app: webapp
